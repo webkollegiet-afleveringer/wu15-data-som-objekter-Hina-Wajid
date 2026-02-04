@@ -1,0 +1,23 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper
+{
+    max-width: 1140px;
+    border: 1px solid black;
+    margin-inline: auto;
+
+}
+
+/* header */
+.header
+{
+    display: grid;
+    
+}
+
+
