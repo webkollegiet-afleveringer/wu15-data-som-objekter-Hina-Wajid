@@ -1,6 +1,6 @@
 // slå dig løs her... 
 
-const cube = `<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+const cube = `<svg class ="cube" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M17.0654 16.9245V31.9999L30.1229 24.4615V9.3855L17.0654 16.9245Z" fill="white"/>
 <path d="M30.1229 9.3855L17.0654 16.9245V31.9999" fill="white"/>
 <path d="M29.0586 7.53848L16.0001 0L2.94263 7.53848V7.54102L16.0001 15.08L29.0586 7.54102V7.53848Z" fill="white"/>
@@ -24,5 +24,59 @@ const login_group = `<svg width="86" height="53" viewBox="0 0 86 53" fill="none"
 `
 
 //eksempel på at udskrive alle overskrifter i services i konsollen:
-services.forEach(service => console.log(service.headline))
-          
+// services.forEach(service => console.log(service.headline))
+
+/* HERO SECTION  */
+// 
+let heroSection = document.querySelector(".hero");
+// let hero_Image = document.createElement("img");
+
+// hero_Image.setAttribute("src" , hero.image);
+// heroSection.appendChild(hero_Image);
+// console.log(hero_Image);
+
+const headerString = 
+    /*html*/
+    `
+    <img src="${hero.image}" alt="hej" class="hero__img">
+    <figure class ="hero__figure">
+   <div class ="figure__svg"> ${cube}
+    ${login_group}
+    </div>
+    </figure>
+    <section class="hero__section__headline "><h1>${hero.headline}</h1>
+    <p>${hero.copy}</p>
+    <button class ="hero__button"><img src="${hero.icon}" alt="button explorer">explore</button></section>  
+    
+    `
+    // <img src="${login_group}" alt="logo" class="hero__figure__logo">
+
+heroSection.insertAdjacentHTML("afterbegin", headerString);
+
+
+
+console.log(hero.headline);
+let headline_string = hero.headline;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
