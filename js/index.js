@@ -29,11 +29,20 @@ const login_group = `<svg width="86" height="53" viewBox="0 0 86 53" fill="none"
 /* HERO SECTION  */
 // 
 let heroSection = document.querySelector(".hero");
-// let hero_Image = document.createElement("img");
+let servicesSection = document.querySelector(".services");
+let facilitiesSection = document.querySelector(".facilities");
+let sitesSection = document.querySelector(".sites");
+let advantagesSection = document.querySelector(".advantages");
 
-// hero_Image.setAttribute("src" , hero.image);
-// heroSection.appendChild(hero_Image);
-// console.log(hero_Image);
+let heroText = hero.headline;  /* get text string , convert it into array*/
+let heroArray = heroText.split(" "); /* using split add space */
+let part1= heroArray.slice(0,4); /* slice will return slice of slice from index 0 to 4 */
+let part2= heroArray.slice(5,8);
+let part3= heroArray.slice(8,heroArray.length);
+
+let part1string1 = part1.map((element)=> element).join(" ");
+let part1string2 = part2.map((element)=> element).join(" ");
+let part1string3 = part3.map((element)=> element).join(" ");
 
 const headerString = 
     /*html*/
@@ -44,26 +53,47 @@ const headerString =
     ${login_group}
     </div>
     </figure>
-    <section class="hero__section__headline "><h1>${hero.headline}</h1>
+    <section class="hero__section__headline ">
+    <h1>
+    <span>${part1string1}</span>
+    <span class ="font_color--orange">${part1string2}</span>
+    <span>${part1string3}</span>
+    </h1>
     <p>${hero.copy}</p>
     <button class ="hero__button"><img src="${hero.icon}" alt="button explorer">explore</button></section>  
     
     `
-    // <img src="${login_group}" alt="logo" class="hero__figure__logo">
-
 heroSection.insertAdjacentHTML("afterbegin", headerString);
 
 
+/* SERVICE SECTION  */
 
-console.log(hero.headline);
-let headline_string = hero.headline;
+services.forEach(service => 
+{
+const servicesString = 
+    /*html*/
+    `
+  <article class="grid-container__article">
+  <img src="${service.illustration}" alt="services" class="hero__img">
+            <h2 class="grid-container__title">${service.headline} </h2>
+            <p class="grid-container__text">${service.text}</p>
+        <a href="#" class="grid-container__button">${service.linktext}</a>
+        </article>
+    `
+servicesSection.insertAdjacentHTML("afterbegin", servicesString);
+}
+)
 
 
+/* fACILITIES SECTION  */
+let facilitiesHeadLine = document.createElement("h2");
+facilitiesHeadLine.classList.add("facilities__article");
+facilitiesHeadLine.textContent =facilities.headline;
 
+// facilitiesSection.insertAdjacentHTML("afterbegin",facilitiesHeadLine);
+facilitiesSection.appendChild(facilitiesHeadLine)
 
-
-
-
+facilities.options.forEach(option => console.log(option.headline))
 
 
 

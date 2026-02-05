@@ -1,3 +1,4 @@
+@import url(services.css);
 *
 {
     margin: 0;
@@ -16,7 +17,10 @@ img
 {   width: 100%;
     display: block;
 }
-
+.font_color--orange
+{
+        color:#F78065 ;
+}
 /* header */
 /* section - hero */
 
@@ -25,11 +29,6 @@ img
    
 position: relative;
 }
-.hero__img
-{
-
-}
-
 
 .hero__figure
 {
@@ -60,16 +59,16 @@ position: relative;
 .hero__section__headline
 {
     width: 741px;
-    height: 537px;
+    height: 500px;
     border: 1px solid black;
     background-color: white;
     position: absolute;
     z-index: 2;
     transform: translate(5%,-50%);
  display: grid;
- padding-inline: 100px;
-  padding-block: 100px;
- gap:5px;
+ padding-inline: 150px;
+  padding-block: 50px;
+ gap:15px;
 }
 
 .hero__section__headline  h1
