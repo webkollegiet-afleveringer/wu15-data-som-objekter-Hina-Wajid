@@ -60,7 +60,7 @@ const headerString =
     <span>${part1string3}</span>
     </h1>
     <p>${hero.copy}</p>
-    <button class ="hero__button"><img src="${hero.icon}" alt="button explorer">explore</button></section>  
+    <button class ="hero__button"><img src="${hero.icon}" alt="button explorer">Explore</button></section>  
     
     `
 heroSection.insertAdjacentHTML("afterbegin", headerString);
@@ -77,7 +77,7 @@ const servicesString =
   <img src="${service.illustration}" alt="services" class="hero__img">
             <h2 class="grid-container__title">${service.headline} </h2>
             <p class="grid-container__text">${service.text}</p>
-        <a href="#" class="grid-container__button">${service.linktext}</a>
+        <a href="#" class="linktext grid-container__button">${service.linktext}</a>
         </article>
     `
 servicesSection.insertAdjacentHTML("beforeend", servicesString);
@@ -101,7 +101,7 @@ const facilitiesString =
   <img src="${option.icon}" alt="type of stop" class="facility_icon">
             <h2 class="grid-container__title">${option.headline} </h2>
             <p class="grid-container__text">${option.text}</p>
-        <a href="#" class="font_color--orange">Show me more</a>
+        <a href="#" class="linktext font_color--orange">Show me more</a>
         </article>
     `
 facilitiesSection.insertAdjacentHTML("beforeend", facilitiesString);

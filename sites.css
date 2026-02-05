@@ -11,7 +11,10 @@
 .sites__section--1
 {
     padding: 1rem;
-width: 325px;
+    width: 325px;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
 }
 .sites__articles
 {
@@ -26,7 +29,8 @@ padding: 1rem;
 
 .sites__section1__h2
 {
-
+    font-weight: 700;
+    font-size: 36px;
 }
 .sites__label
 {
@@ -35,7 +39,8 @@ padding: 1rem;
 
 .sites__section1__p
 {
-
+font-weight: 400;
+font-size: 18px;
 }
 .sites__button
 {

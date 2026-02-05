@@ -24,6 +24,20 @@ img
 {   width: 100%;
     /* display: block; */
 }
+
+a{
+    text-decoration: none;
+}
+
+a:visited
+{
+ 
+}
+.linktext
+{
+    font-weight: 700;
+    font-size: 18px;
+}
 .font_color--orange
 {
         color:#F78065 ;
@@ -42,7 +56,7 @@ position: relative;
    
     position: absolute;
     top: 0;
-    z-index: 1;
+     z-index: 1;
      width: 100%;
     
 
@@ -52,7 +66,9 @@ position: relative;
     display: flex;
     width: 100%;
     align-items: center;
-    justify-content: space-around;  
+    margin-top: 2rem;
+    margin-left: 8rem;
+    gap: 67rem;  
 }
 .figure__svg svg
 {
@@ -70,25 +86,31 @@ position: relative;
     background-color: white;
     position: absolute;
     z-index: 2;
-    transform: translate(5%,-50%);
- display: grid;
- padding-inline: 150px;
-  padding-block: 50px;
- gap:15px;
+    transform: translate(9%,-53%);
+    display: grid;
+    padding-left: 64px;
+    padding-right: 192px;
+    padding-block: 50px;
+    gap:15px;
+    /* box-shadow: 0 5px 20px rgba(0,0,0, 0.4); */
+box-shadow: 0px 4px 100px 0px rgba(0, 0, 0, 0.1);
 }
 
 .hero__section__headline  h1
 {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 39px;
 }
 .hero__section__headline p{
     font-size: 20px;
+    font-weight: 500;
+    
 }
 .hero__button
 {
     background-color:#F78065 ;
     color: white;
+    font-weight: 700;
     display: flex;
     text-align: center;
     align-items: center;
