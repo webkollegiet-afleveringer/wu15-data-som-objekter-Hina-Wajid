@@ -1,0 +1,25 @@
+.facilities
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,auto);
+    gap: 1rem;
+    max-width: 80rem;
+    margin-inline: auto;
+    margin-bottom: 6rem;
+}
+
+.facilities__article
+{
+    grid-row: 1;
+    grid-column: span 4;
+}
+.facilities__article--
+{
+     border: 1px solid black;
+    padding: 1rem;
+    grid-row: span 4;
+    display: grid;
+    grid-template-rows: subgrid;
+}
+

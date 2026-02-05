@@ -91,9 +91,24 @@ facilitiesHeadLine.classList.add("facilities__article");
 facilitiesHeadLine.textContent =facilities.headline;
 
 // facilitiesSection.insertAdjacentHTML("afterbegin",facilitiesHeadLine);
-facilitiesSection.appendChild(facilitiesHeadLine)
+facilitiesSection.appendChild(facilitiesHeadLine);
 
-facilities.options.forEach(option => console.log(option.headline))
+facilities.options.forEach(option => 
+    {
+const facilitiesString = 
+    /*html*/
+    `
+  <article class="facilities__article--">
+  <img src="${option.icon}" alt="type of stop" class="facility_icon">
+            <h2 class="grid-container__title">${option.headline} </h2>
+            <p class="grid-container__text">${option.text}</p>
+        <a href="#" class="font_color--orange">Show me more</a>
+        </article>
+    `
+facilitiesSection.insertAdjacentHTML("afterbegin", facilitiesString);
+}
+   
+)
 
 
 
