@@ -80,10 +80,9 @@ const servicesString =
         <a href="#" class="grid-container__button">${service.linktext}</a>
         </article>
     `
-servicesSection.insertAdjacentHTML("afterbegin", servicesString);
+servicesSection.insertAdjacentHTML("beforeend", servicesString);
 }
 )
-
 
 /* fACILITIES SECTION  */
 let facilitiesHeadLine = document.createElement("h2");
@@ -105,23 +104,61 @@ const facilitiesString =
         <a href="#" class="font_color--orange">Show me more</a>
         </article>
     `
-facilitiesSection.insertAdjacentHTML("afterbegin", facilitiesString);
-}
-   
+facilitiesSection.insertAdjacentHTML("beforeend", facilitiesString);
+} 
 )
 
+/* SITES SECTION  */
 
+const sitesSection1String = 
+`
+<section class = "sites__section--1">
+    <h2 class="sites__section1__h2">${sites.headline}</h2>
+    <p class="sites__section1__p">${sites.text}</p>
+    <button class ="hero__button"><img src="${sites.btnicon}" alt="button start community">Start</button></section>  
+    </section>
+`
+sitesSection.insertAdjacentHTML("afterbegin",sitesSection1String);
+sites.places.forEach(place => 
+    {
+const placeString = 
+    /*html*/
+    `
+  <article class="sites__articles">
+  <img src="${place.img}" alt="lucciano" class="place_image">
+        <h3>${place.name} </h3>
+        <p class="sites__label">${place.city}</p>
+        <a href="#" class="font_color--orange">View the Site</a>
+        </article>
+    `
+sitesSection.insertAdjacentHTML("afterbegin", placeString);
+} 
+)
 
+/* ADVANTAGES SECTION*/
 
+let advantagesHeadLine = document.createElement("h2");
+advantagesHeadLine.classList.add("advantages-headline");
+advantagesHeadLine.innerHTML ="Our Advantages";
+console.log(advantagesHeadLine);
 
+advantagesSection.insertAdjacentElement("afterbegin",advantagesHeadLine);
+//  advantagesSection.append(advantagesHeadLine);
 
-
-
-
-
-
-
-
+advantages.forEach(advantage => 
+{
+const advantagesString = 
+    /*html*/
+    `
+  <article class="advantage__article">
+  <img src="${advantage.icon}" alt="advantages" class="advantages_icon">
+            <h2 class="advantages__headline">${advantage.headline} </h2>
+            <p class="advantages__text">${advantage.text}</p>
+        </article>
+    `
+advantagesSection.insertAdjacentHTML("beforeend",advantagesString);
+}
+)
 
 
 

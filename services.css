@@ -12,13 +12,13 @@
 
 .grid-container__article
 {
-    border: 1px solid black;
     padding: 1rem;
     grid-row: span 4;
     display: grid;
     grid-template-rows: subgrid;
 
 }
+
 .grid-container__article p
 {
 color:#000000;
@@ -27,3 +27,4 @@ color:#000000;
 {
     color:#F78065 ;
 }
+

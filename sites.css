@@ -1,0 +1,51 @@
+.sites
+{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1rem;
+    max-width: 80rem;
+    margin-inline: auto;
+    margin-bottom: 6rem;
+}
+
+.sites__section--1
+{
+    padding: 1rem;
+width: 325px;
+}
+.sites__articles
+{
+display: grid;
+grid-template-rows: repeat(418px auto auto auto);
+gap: 1rem;
+padding: 1rem;
+}
+.sites__articles h3{
+
+}
+
+.sites__section1__h2
+{
+
+}
+.sites__label
+{
+
+}
+
+.sites__section1__p
+{
+
+}
+.sites__button
+{
+    
+}
+.place_image
+{
+
+height: 418px;
+
+}
+
+

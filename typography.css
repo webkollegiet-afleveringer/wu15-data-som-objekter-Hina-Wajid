@@ -1,0 +1,47 @@
+@font-face {
+    font-family: "Montserrat";
+    /* name of the font to be used */
+    src: url(assets/fonts/Montserrat-VariableFont_wght.ttf);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(assets/fonts/Montserrat-Italic-VariableFont_wght.ttf);
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Merriweather";
+    src: url(assets/fonts/Merriweather-VariableFont_opsz\,wdth\,wght.ttf);
+    font-style: normal;
+}
+@font-face {
+ font-family: "Merriweather";
+    src: url(assets/fonts/Merriweather-Italic-VariableFont_opsz\,wdth\,wght.ttf);
+    font-style: italic;
+}
+
+html,
+body
+
+/* setting font to whole html */
+/* Ensure consistent font rendering */
+    {
+    font-family: "Montserrat", sans-serif;
+
+}
+
+input,
+textarea,
+button
+
+/* Elements, who does not automatically inerit font from html and body, we assign font here*/
+    {
+
+    font-family: "Montserrat", sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Merriweather", "inter", sans-serif;
+}

@@ -16,10 +16,16 @@
 }
 .facilities__article--
 {
-     border: 1px solid black;
     padding: 1rem;
     grid-row: span 4;
     display: grid;
     grid-template-rows: subgrid;
 }
+
+.facility_icon
+{
+    height: 32px;
+    width: 32px;
+}
+
 
