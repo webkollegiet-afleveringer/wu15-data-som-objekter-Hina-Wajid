@@ -1,0 +1,128 @@
+@import url(services.css);
+@import url(facilities.css);
+@import url(sites.css);
+@import url(adventages.css);
+@import url(typography.css);
+
+
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper
+{
+    width: 1440px;
+    margin-inline: auto;
+
+}
+img
+{   width: 100%;
+    /* display: block; */
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited
+{
+ 
+}
+.linktext
+{
+    font-weight: 700;
+    font-size: 18px;
+}
+.font_color--orange
+{
+        color:#F78065 ;
+}
+/* header */
+/* section - hero */
+
+.hero
+{
+   
+position: relative;
+}
+
+.hero__figure
+{
+   
+    position: absolute;
+    top: 0;
+     z-index: 1;
+     width: 100%;
+    
+
+}
+.figure__svg
+{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-top: 2rem;
+    margin-left: 8rem;
+    gap: 67rem;  
+}
+.figure__svg svg
+{
+ display: flex;
+}
+.cube
+{
+    display: flex;
+
+}
+.hero__section__headline
+{
+    width: 741px;
+    height: 500px;
+    background-color: white;
+    position: absolute;
+    z-index: 2;
+    transform: translate(9%,-53%);
+    display: grid;
+    padding-left: 64px;
+    padding-right: 192px;
+    padding-block: 50px;
+    gap:15px;
+    /* box-shadow: 0 5px 20px rgba(0,0,0, 0.4); */
+box-shadow: 0px 4px 100px 0px rgba(0, 0, 0, 0.1);
+}
+
+.hero__section__headline  h1
+{
+    font-weight: 700;
+    font-size: 39px;
+}
+.hero__section__headline p{
+    font-size: 20px;
+    font-weight: 500;
+    
+}
+.hero__button
+{
+    background-color:#F78065 ;
+    color: white;
+    font-weight: 700;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 65px;
+    gap:10px;
+    border: none;
+}
+.hero__button img
+{
+    height: 24px;
+    width: 24px;
+}
+

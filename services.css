@@ -1,0 +1,39 @@
+.services    /* services container */
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,auto);
+    gap: 2rem;
+    max-width: 80rem;
+    margin-inline: auto;
+    margin-top: 20rem;
+    margin-bottom: 6rem;
+}
+
+.grid-container__article
+{
+    padding: 1rem;
+    grid-row: span 4;
+    display: grid;
+    grid-template-rows: subgrid;
+
+}
+.grid-container__article img
+{
+    aspect-ratio: 247.5/180;
+}
+
+.grid-container__article p
+{
+color:rgba(0, 0, 0, 50%);
+}
+.grid-container__title
+{
+    font-size: 24px ;
+    font-weight: 700;
+}
+.grid-container__button
+{
+    color:#F78065 ;
+}
+
