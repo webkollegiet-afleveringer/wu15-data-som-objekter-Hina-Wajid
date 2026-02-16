@@ -96,3 +96,9 @@ let advantages = [
 ]
 
 // Opret dit dataobjekt til footerens indhold herunder
+
+let brand =
+    {
+        headline: "Easy Camper",
+        brandtext: "When Passion Meets Comfort."
+    }

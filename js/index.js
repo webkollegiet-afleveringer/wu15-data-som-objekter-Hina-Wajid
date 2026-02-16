@@ -35,10 +35,11 @@ let sitesSection = document.querySelector(".sites");
 let advantagesSection = document.querySelector(".advantages");
 
 let heroText = hero.headline;  /* get text string , convert it into array*/
-let heroArray = heroText.split(" "); /* using split add space */
+let heroArray = heroText.split(" "); /* using split , it add space -it will turn string it into array of words*/
 let part1= heroArray.slice(0,4); /* slice will return slice of slice from index 0 to 4 */
 let part2= heroArray.slice(5,8);
 let part3= heroArray.slice(8,heroArray.length);
+
 
 let part1string1 = part1.map((element)=> element).join(" ");
 let part1string2 = part2.map((element)=> element).join(" ");
@@ -161,4 +162,55 @@ advantagesSection.insertAdjacentHTML("beforeend",advantagesString);
 )
 
 
+
+´ <div class="footer__div__links">
+                <section class="footer__section__text">
+                    <h2>${brand.headline}</h2>
+                    <p>${brand.brandtext}</p>
+                </section>
+                <section class="footer__section__nav">
+                    <h2>Discover the Network</h2>
+                    <nav>
+                        <ul>
+                        <li>text</li>
+                        <li>text</li>
+                        <li>text</li>
+                        <li>text</li>
+                        </ul>
+                    </nav>
+                </section>
+                <section class="footer__section__nav">
+                    <h2>text</h2>
+                    <nav>
+                       <ul>
+                        <li>text</li>
+                        <li>text</li>
+                        <li>text</li>
+                        </ul>
+                     </nav>
+                </section>
+                <section class="footer__section__nav">
+                    <h2>text</h2>
+                    <nav>
+                         <ul>
+                        <li>text</li>
+                        <li>text</li>
+                        <li>text</li>
+                        <li>text</li>
+                        </ul>
+                    </nav>
+                </section>
+            </div>
+            <div class="footer__section__bottom--copyright">
+   <small>EazyCamper. All rights reserved.</small>
+   <nav class="footer__section__nav--bottom">
+                       <ul>
+                        <li>text</li>
+                        <li>text</li>
+                        <li>text</li>
+                        <li>text</li>
+                        <li>text</li>
+                        </ul>
+                    </nav>
+            </div>´
 
