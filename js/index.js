@@ -165,76 +165,41 @@ advantagesSection.insertAdjacentHTML("beforeend",advantagesString);
 
 /* Footer  */
 
-const footerSectionString = /*html*/
-`           <section class="footer__section__text">
+const listItemsString = /*html*/`
+<div class="footer__div__links">
+ <section class="footer__section__text">
                     <h2>${footer.brand.headline}</h2>
                     <p>${footer.brand.brandtext}</p>
             </section>
-
-`
-footerSection.insertAdjacentHTML("beforeend",footerSectionString);
-
-
-const listItemsString = /*html*/`
     ${footer.sections.map((item) => 
-        `
+        ` <section class="footer__section__nav">
         <h2>${item.heading}</h2> 
-        <ul> ${item.linkhref.map((thislink) => `
+         <nav><ul> ${item.linkhref.map((thislink) => `
             <li><a href="${thislink.link}">${thislink.linkText}</a></li>`).join("")}
-        </ul>
-        `
-)}`
+        </ul> </nav>
+         </section>`
+).join("")}  </div>
+`
 
-console.log(listItemsString);
+const listItemsString2 = /*html*/`
+<div class="footer__section__bottom">
+   <small>${footer.footerbottomItems.copyright}</small>
+<nav class="footer__section__nav--bottom">
+<ul>
+    ${footer.footerbottomItems.linkhref.map((item) =>{
+       return `<li><a href="${item.link}">${item.linkText}</a></li>` 
+    }).join("")}</ul>
+      </nav>
+            </div>`
+
+
+ console.log(listItemsString);
+ //console.log(listItemsString2);
+ 
 
 footerSection.insertAdjacentHTML("beforeend",listItemsString);
+footerSection.insertAdjacentHTML("beforeend",listItemsString2);
 
-
-
-const footerSectionStringlink = /*html*/
-`               <section class="footer__section__nav">
-                    <h2>sections</h2>
-                    <nav>
-                        <ul>
-                            <li><a href="$">$</a></li>
-                        </ul>
-                    </nav>
-                </section>
-            
-      <section class="footer__section__nav">
-                    <h2>$</h2>
-                    <nav>
-                       <ul>
-                        <li><a href="$">$</a></li>
-                        <li><a href="$">$</a></li>
-                        <li><a href="$">$</a></li>
-                        </ul>
-                     </nav>
-                </section>
-                <section class="footer__section__nav">
-                    <h2>$</h2>
-                    <nav>
-                       <ul>
-                        <li><a href="$">$</a></li>
-                        <li><a href="$">$</a></li>
-                        <li><a href="$">$</a></li>
-                        <li><a href="$">$</a></li>
-                        </ul>
-                    </nav>
-                </section>
-           
-            <div class="footer__section__bottom">
-   <small>$</small>
-   <nav class="footer__section__nav--bottom">
-                       <ul>
-                        <li><a href="$">$</a></li>
-                        <li><a href="$">$</a></li>
-                        <li><a href="$">$</a></li>
-                        <li><a href="$">$</a></li>
-                        </ul>
-                    </nav>
-                    </nav>
-            </div> `
 
 
 

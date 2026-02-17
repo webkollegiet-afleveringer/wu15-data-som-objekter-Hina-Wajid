@@ -97,7 +97,6 @@ let advantages = [
 
 // Opret dit dataobjekt til footerens indhold herunder
 
-// h2:["Discover the Network", "Become a Manager", "Assistance"],
 
 let footer = {
     brand:
@@ -117,24 +116,35 @@ let footer = {
         {
             heading: "Become a Manager",
             linkhref: [
-                { link: "#", linkText: "Where to shop" },
-                { link: "#", linkText: "Tour Guided" },
-                { link: "#", linkText: "Our Tours" },
-                { link: "#", linkText: "About Us" }]
+                { link: "#", linkText: "Join your Pairing" },
+                { link: "#", linkText: "Offer your Service" },
+                { link: "#", linkText: "Are you a guide?" },
+            ]
         },
         {
             heading: "Assistance",
             linkhref: [
-                { link: "#", linkText: "Where to shop" },
+                { link: "#", linkText: "Support Center" },
                 { link: "#", linkText: "Tour Guided" },
-                { link: "#", linkText: "Our Tours" },
-                { link: "#", linkText: "About Us" }]
+                { link: "#", linkText: "FAQs" },
+                { link: "#", linkText: "Cancallation Options" },
+                { link: "#", linkText: "Reliablity and Sequrity" }]
         }
-    ]
+    ],
+
+    footerbottomItems:
+    {
+        copyright: "EazyCamper. All rights reserved. ",
+        linkhref: [
+            { link: "#", linkText: "About" },
+            { link: "#", linkText: "Site Map" },
+            { link: "#", linkText: "Terms" },
+            { link: "#", linkText: "Privacy Policy" },
+            { link: "#", linkText: "Teams" }]
+    }
 }
 
 
-/* let allUrlLinks =
-{
-    link: [href: ,]
-} */
+
+
+

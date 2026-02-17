@@ -16,8 +16,9 @@
     src: url(assets/fonts/Merriweather-VariableFont_opsz\,wdth\,wght.ttf);
     font-style: normal;
 }
+
 @font-face {
- font-family: "Merriweather";
+    font-family: "Merriweather";
     src: url(assets/fonts/Merriweather-Italic-VariableFont_opsz\,wdth\,wght.ttf);
     font-style: italic;
 }
@@ -42,6 +43,11 @@ button
     font-family: "Montserrat", sans-serif;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "Merriweather", sans-serif;
 }
