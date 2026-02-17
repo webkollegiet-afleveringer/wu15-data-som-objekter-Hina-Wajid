@@ -33,9 +33,6 @@ a {
     text-decoration: none;
 }
 
-a:visited {
-    color: unset;
-}
 
 .linktext {
     font-weight: 700;
@@ -101,6 +98,7 @@ a:visited {
 .hero__section__headline h1 {
     font-weight: 700;
     font-size: 39px;
+  
 }
 
 .hero__section__headline p {
@@ -126,4 +124,35 @@ a:visited {
 .hero__button img {
     height: 24px;
     width: 24px;
+}
+
+
+/* =========== SCREEN SIZE BELOW 1024 PX=========== */
+
+@media (max-width: 1024px) {
+.sites,.advantages,.services,.facilities,.footer__div__links {
+    display: block;}
+    
+}
+
+/* =========== SCREEN SIZE BELOW 767 PX=========== */
+/* =========== MOBILE =========== */
+@media (max-width: 767px) {
+   .sites {
+    display: block;}
+}
+
+
+/* ===header media query is in - nav.css=== */
+
+/* mobile styles */
+@media (max-width:500px) {
+.sites {
+    display: block;}
+}
+
+@media (max-width:412px) {
+
+    .sites {
+    display: block;}
 }
