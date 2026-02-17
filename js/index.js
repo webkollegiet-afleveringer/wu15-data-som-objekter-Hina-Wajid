@@ -33,6 +33,8 @@ let servicesSection = document.querySelector(".services");
 let facilitiesSection = document.querySelector(".facilities");
 let sitesSection = document.querySelector(".sites");
 let advantagesSection = document.querySelector(".advantages");
+let footerSection = document.querySelector(".footer");
+
 
 let heroText = hero.headline;  /* get text string , convert it into array*/
 let heroArray = heroText.split(" "); /* using split , it add space -it will turn string it into array of words*/
@@ -141,7 +143,6 @@ sitesSection.insertAdjacentHTML("afterbegin", placeString);
 let advantagesHeadLine = document.createElement("h2");
 advantagesHeadLine.classList.add("advantages-headline");
 advantagesHeadLine.innerHTML ="Our Advantages";
-console.log(advantagesHeadLine);
 
 advantagesSection.insertAdjacentElement("afterbegin",advantagesHeadLine);
 //  advantagesSection.append(advantagesHeadLine);
@@ -162,55 +163,82 @@ advantagesSection.insertAdjacentHTML("beforeend",advantagesString);
 )
 
 
+/* Footer  */
 
-´ <div class="footer__div__links">
-                <section class="footer__section__text">
-                    <h2>${brand.headline}</h2>
-                    <p>${brand.brandtext}</p>
-                </section>
-                <section class="footer__section__nav">
-                    <h2>Discover the Network</h2>
+const footerSectionString = /*html*/
+`           <section class="footer__section__text">
+                    <h2>${footer.brand.headline}</h2>
+                    <p>${footer.brand.brandtext}</p>
+            </section>
+
+`
+footerSection.insertAdjacentHTML("beforeend",footerSectionString);
+
+
+const listItemsString = /*html*/`
+    ${footer.sections.map((item) => 
+        `
+        <h2>${item.heading}</h2> 
+        <ul> ${item.linkhref.map((thislink) => `
+            <li><a href="${thislink.link}">${thislink.linkText}</a></li>`).join("")}
+        </ul>
+        `
+)}`
+
+console.log(listItemsString);
+
+footerSection.insertAdjacentHTML("beforeend",listItemsString);
+
+
+
+const footerSectionStringlink = /*html*/
+`               <section class="footer__section__nav">
+                    <h2>sections</h2>
                     <nav>
                         <ul>
-                        <li>text</li>
-                        <li>text</li>
-                        <li>text</li>
-                        <li>text</li>
+                            <li><a href="$">$</a></li>
                         </ul>
                     </nav>
                 </section>
-                <section class="footer__section__nav">
-                    <h2>text</h2>
+            
+      <section class="footer__section__nav">
+                    <h2>$</h2>
                     <nav>
                        <ul>
-                        <li>text</li>
-                        <li>text</li>
-                        <li>text</li>
+                        <li><a href="$">$</a></li>
+                        <li><a href="$">$</a></li>
+                        <li><a href="$">$</a></li>
                         </ul>
                      </nav>
                 </section>
                 <section class="footer__section__nav">
-                    <h2>text</h2>
+                    <h2>$</h2>
                     <nav>
-                         <ul>
-                        <li>text</li>
-                        <li>text</li>
-                        <li>text</li>
-                        <li>text</li>
+                       <ul>
+                        <li><a href="$">$</a></li>
+                        <li><a href="$">$</a></li>
+                        <li><a href="$">$</a></li>
+                        <li><a href="$">$</a></li>
                         </ul>
                     </nav>
                 </section>
-            </div>
-            <div class="footer__section__bottom--copyright">
-   <small>EazyCamper. All rights reserved.</small>
+           
+            <div class="footer__section__bottom">
+   <small>$</small>
    <nav class="footer__section__nav--bottom">
                        <ul>
-                        <li>text</li>
-                        <li>text</li>
-                        <li>text</li>
-                        <li>text</li>
-                        <li>text</li>
+                        <li><a href="$">$</a></li>
+                        <li><a href="$">$</a></li>
+                        <li><a href="$">$</a></li>
+                        <li><a href="$">$</a></li>
                         </ul>
                     </nav>
-            </div>´
+                    </nav>
+            </div> `
 
+
+
+
+/* const listItemsString = `
+    ${footer.listItems.map((item) => `<h2>${item.headline}</h2> <ul> ${item.links.map((thislink) => `<li>${thislink.link}</li>`).join("")}</ul>`
+)}` */
