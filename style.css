@@ -32,7 +32,14 @@ img {
 a {
     text-decoration: none;
 }
-
+a.linktext:visited /* all linkes tht has class name as linktext get this */
+{
+    color: #F78065;
+}
+a:visited
+{
+    color: unset;
+}
 
 .linktext {
     font-weight: 700;
